@@ -78,7 +78,7 @@ if roundState = 2 { #prevent attacks outside of fight state
 #Smash Kung Fu Upper (uses one super bar)
 if command = "SmashKFUpper" && power >= 1000 && stateType != A &&
 	(ctrl ||
-		(hitDefAttr = SC, NA, SA, HA && stateNo != [3050, 3100] && moveContact) ||
+		(hitDefAttr = SC, NA, SA, HA && stateNo != [3050, 3099] && moveContact) ||
 		(stateNo = 1310 || stateNo = 1330)) { #From blocking
 	changeState{value: 3050}
 }
@@ -87,7 +87,7 @@ if command = "SmashKFUpper" && power >= 1000 && stateType != A &&
 #Triple Kung Fu Palm (uses one super bar)
 if command = "TripleKFPalm" && power >= 1000 && stateType != A &&
 	(ctrl ||
-		(hitDefAttr = SC, NA, SA, HA && stateNo != [3050, 3100] && moveContact) ||
+		(hitDefAttr = SC, NA, SA, HA && stateNo != [3000, 3049] && moveContact) ||
 		(stateNo = 1310 || stateNo = 1330)) { #From blocking
 	changeState{value: 3000}
 }
